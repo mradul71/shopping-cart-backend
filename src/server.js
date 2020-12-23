@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import data from "./data";
 import mongoose from "mongoose";
 import dotenv from "dotenv"; 
+import cors from "cors"
 import Product from "../model/productModel";
 
 const app = express();
@@ -10,6 +11,7 @@ const app = express();
 dotenv.config();
 
 app.use(bodyParser.json());
+app.use(cors());
 
 mongoose.connect(process.env.MONGOURI,{
     useNewUrlParser: true,
