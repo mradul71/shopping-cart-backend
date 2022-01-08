@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon --watch backed --exec babel-node src/server.js"
+    "start": "nodemon --watch backend --exec babel-node src/server.js"
   },
   "keywords": [],
   "author": "",
