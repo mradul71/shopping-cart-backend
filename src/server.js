@@ -32,7 +32,7 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/products", async (req, res) => {
-    // res.send(data.products);
+    res.send(data.products);
     var arr = [];
     Product.find({}, (err, item) => {
         res.send(item);
