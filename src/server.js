@@ -5,8 +5,11 @@ import mongoose from "mongoose";
 import dotenv from "dotenv"; 
 import cors from "cors"
 import Product from "../model/productModel";
+var cors = require('cors')
 
 const app = express();
+
+app.use(cors())
 
 dotenv.config();
 
